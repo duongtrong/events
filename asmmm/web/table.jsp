@@ -10,10 +10,15 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Events</h1>
-    <table>
+    <table style="width: ">
         <tr>
             <th>When</th>
             <th>Time</th>
@@ -21,7 +26,7 @@
             <th>Where</th>
             <th>More info</th>
         </tr>
-        <s:iterator value="events">
+        <s:iterator value="event">
             <tr>
                 <td><s:property value="timeDay"/></td>
                 <td><s:property value="timeOld"/></td>

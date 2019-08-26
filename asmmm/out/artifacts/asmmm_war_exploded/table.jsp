@@ -21,7 +21,7 @@
             <th>Where</th>
             <th>More info</th>
         </tr>
-        <s:iterator value="events">
+        <s:iterator value="event">
             <tr>
                 <td><s:property value="timeDay"/></td>
                 <td><s:property value="timeOld"/></td>

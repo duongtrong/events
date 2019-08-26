@@ -4,11 +4,9 @@ import javax.persistence.*;
 import java.util.Calendar;
 
 @Entity
-@Table(name = "events")
 public class Event {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String timeDay;
     private String timeOld;
     private String planning;

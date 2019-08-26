@@ -14,7 +14,7 @@
 <body>
 <h1>Create event</h1>
 <s:form action="store" method="POST">
-    <s:textfield name="event.timeDay" label="When? "/>
+    <s:textfield type="date" name="event.timeDay" label="When? "/>
     <s:textfield name="event.timeOld"/>
     <s:textfield name="event.planning" label="What are you planning? "/>
     <s:textfield name="event.whereee" label="Where? "/>
