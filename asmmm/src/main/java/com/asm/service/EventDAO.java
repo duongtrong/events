@@ -9,4 +9,5 @@ public interface EventDAO {
     void save(Event event);
     List<Event> findAll();
     Event getEventById(String id);
+    void delete(String id);
 }

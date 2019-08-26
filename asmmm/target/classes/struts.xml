@@ -16,7 +16,15 @@
             <result name="input">/form.jsp</result>
         </action>
 
+        <action name="list" class="com.asm.action.EventAction" method="list">
+            <result name="success">/table.jsp</result>
+        </action>
+
         <action name="store" class="com.asm.action.EventAction" method="store">
+            <result name="success">/table.jsp</result>
+        </action>
+
+        <action name="deleteEvent" class="com.asm.action.EventAction" method="deleteEvent">
             <result name="success">/table.jsp</result>
         </action>
     </package>

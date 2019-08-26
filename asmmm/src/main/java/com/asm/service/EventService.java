@@ -13,12 +13,12 @@ import java.util.logging.Logger;
 public class EventService implements EventDAO {
 
     private static Logger LOGGER = Logger.getLogger(EventService.class.getSimpleName());
+    Transaction transaction = null;
 
     public void save(Event event) {
-        Transaction transaction = null;
         try (Session session = HibernateUtil.getSession()) {
             transaction = session.beginTransaction();
-            session.save(event);
+            session.saveOrUpdate(event);
             transaction.commit();
             LOGGER.log(Level.INFO, String.format("Save event success with time day %s", event.getTimeDay()));
         } catch (Exception e) {
@@ -32,7 +32,9 @@ public class EventService implements EventDAO {
     public List<Event> findAll() {
         List<Event> students = new ArrayList<>();
         try (Session session = HibernateUtil.getSession()) {
+            transaction = session.beginTransaction();
             students = session.createQuery("from Event").list();
+            transaction.commit();
         } catch (Exception ex) {
             LOGGER.log(Level.SEVERE, String.format("Error when load events "), ex);
         }
@@ -41,7 +43,6 @@ public class EventService implements EventDAO {
 
     public Event getEventById(String id){
         Event event = null;
-        Transaction transaction = null;
         try (Session session = HibernateUtil.getSession()) {
             transaction = session.beginTransaction();
             session.load(Event.class, id);;
@@ -55,6 +56,20 @@ public class EventService implements EventDAO {
         return event;
     }
 
-
-
+    public void delete(String id) {
+        try (Session session = HibernateUtil.getSession()) {
+            transaction = session.beginTransaction();
+            Event event = session.get(Event.class, id);
+            if (event != null) {
+                session.delete(event);
+                LOGGER.log(Level.INFO, String.format("Delete event success...", id));
+            }
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            LOGGER.log(Level.SEVERE, String.format("Can not delete event...", id), e);
+        }
+    }
 }

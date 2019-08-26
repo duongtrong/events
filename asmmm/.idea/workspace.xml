@@ -7,13 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="103e8a2c-1d87-4751-91be-39deeacb2317" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../asm/asm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/asmmm_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/asmmm_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/model/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/model/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asmmm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/asmmm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/action/EventAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/action/EventAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/service/EventDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/service/EventDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/com/asm/service/EventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/asmmm_war_exploded/table.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/asm/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asm/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/asm/model/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/asm/model/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asm/action/EventAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asm/action/EventAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asm/service/EventDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asm/service/EventDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/asm/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/asm/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/asm/action/EventAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/asm/action/EventAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/asm/service/EventDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/asm/service/EventDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/asm/service/EventService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/asm/service/EventService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/table.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,14 +44,17 @@
       <list>
         <option value="struts" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/table.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -53,6 +73,7 @@
   <component name="ProjectId" id="1PxM9ruTQmGclmwnrXoi1Nf6WI2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AWA_practice_exam/AWA_practice_exam" />
@@ -167,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566811145166</updated>
       <workItem from="1566811148184" duration="9507000" />
-      <workItem from="1566832987957" duration="2331000" />
+      <workItem from="1566832987957" duration="11365000" />
     </task>
     <servers />
   </component>

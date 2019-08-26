@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
 <head>
     <title>Title</title>
@@ -18,23 +20,33 @@
 </head>
 <body>
     <h1>Events</h1>
-    <table style="width: ">
+    <br>
+    <s:a href="form.jsp">Add new Event</s:a>
+    <table style="width: 50%;">
         <tr>
             <th>When</th>
             <th>Time</th>
             <th>What are you planning</th>
             <th>Where</th>
             <th>More info</th>
+            <th>Action</th>
+            <th></th>
         </tr>
-        <s:iterator value="event">
+        <c:forEach var="eve" items="${listEvent}">
             <tr>
-                <td><s:property value="timeDay"/></td>
-                <td><s:property value="timeOld"/></td>
-                <td><s:property value="planning"/></td>
-                <td><s:property value="whereee"/></td>
-                <td><s:property value="info"/></td>
+<%--                <td><s:property value="timeDay"/></td>--%>
+<%--                <td><s:property value="timeOld"/></td>--%>
+<%--                <td><s:property value="planning"/></td>--%>
+<%--                <td><s:property value="whereee"/></td>--%>
+<%--                <td><s:property value="info"/></td>--%>
+                <td>${eve.timeDay}</td>
+                <td>${eve.timeOld}</td>
+                <td>${eve.planning}</td>
+                <td>${eve.whereee}</td>
+                <td>${eve.info}</td>
+                <td><a href="delete/${eve.id}">Delete</a></td>
             </tr>
-        </s:iterator>
+        </c:forEach>
     </table>
 </body>
 </html>
